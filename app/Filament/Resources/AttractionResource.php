@@ -88,8 +88,8 @@ class AttractionResource extends Resource
                                         Forms\Components\TextInput::make('external_url')
                                             ->required(),
 
-                                        // CuratorPicker::make('image')
-                                        //     ->required(),
+                                        CuratorPicker::make('image')
+                                            ->required(),
                                     ])
                             ]),
                     ])->columnSpan(['lg' => 8]),
