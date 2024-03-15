@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Filament\Resources\AttractionResource\Pages;
+namespace App\Filament\Resources\FooResource\Pages;
 
-use App\Filament\Resources\AttractionResource;
+use App\Filament\Resources\FooResource;
 use Filament\Actions;
 use Filament\Resources\Pages\CreateRecord;
 
-class CreateAttraction extends CreateRecord
+class CreateFoo extends CreateRecord
 {
     use CreateRecord\Concerns\Translatable;
-    protected static string $resource = AttractionResource::class;
+    protected static string $resource = FooResource::class;
 
     protected function getHeaderActions(): array
     {

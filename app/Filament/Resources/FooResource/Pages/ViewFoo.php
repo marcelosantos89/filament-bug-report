@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Filament\Resources\AttractionResource\Pages;
+namespace App\Filament\Resources\FooResource\Pages;
 
-use App\Filament\Resources\AttractionResource;
+use App\Filament\Resources\FooResource;
 use Filament\Actions;
 use Filament\Resources\Pages\ViewRecord;
 
-class ViewAttraction extends ViewRecord
+class ViewFoo extends ViewRecord
 {
     use ViewRecord\Concerns\Translatable;
-    protected static string $resource = AttractionResource::class;
+    protected static string $resource = FooResource::class;
 
     public static function getNavigationLabel(): string
     {

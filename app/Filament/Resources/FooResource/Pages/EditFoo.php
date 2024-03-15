@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Filament\Resources\AttractionResource\Pages;
+namespace App\Filament\Resources\FooResource\Pages;
 
-use App\Filament\Resources\AttractionResource;
+use App\Filament\Resources\FooResource;
 use Filament\Actions;
 use Filament\Resources\Pages\EditRecord;
 
-class EditAttraction extends EditRecord
+class EditFoo extends EditRecord
 {
     use EditRecord\Concerns\Translatable;
-    protected static string $resource = AttractionResource::class;
+    protected static string $resource = FooResource::class;
 
     public static function getNavigationLabel(): string
     {
@@ -20,7 +20,7 @@ class EditAttraction extends EditRecord
     {
         return [
             Actions\LocaleSwitcher::make(),
-            // Actions\ViewAction::make(),
+            Actions\ViewAction::make(),
             Actions\DeleteAction::make(),
         ];
     }

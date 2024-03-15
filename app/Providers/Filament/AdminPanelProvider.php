@@ -61,12 +61,6 @@ class AdminPanelProvider extends PanelProvider
             ->plugins([
                 SpatieLaravelTranslatablePlugin::make()
                     ->defaultLocales(['en', 'pt']),
-                \Awcodes\Curator\CuratorPlugin::make()
-                    ->label('Media')
-                    ->pluralLabel('Media Library')
-                    ->navigationIcon('heroicon-o-photo')
-                    ->navigationGroup('Media')
-                    ->navigationCountBadge(),
             ]);
     }
 }
